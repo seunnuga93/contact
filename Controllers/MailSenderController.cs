@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Mail;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,7 +21,7 @@ public class MailSenderController : Controller
             // Mail message
             var mail = new MailMessage()
             {
-                From = new MailAddress("noreply@codinginfinite.com"),
+                From = new MailAddress("jennyluck93@gmail.com"),
                 Subject = "Email Sender App",
                 Body = Message
             };
@@ -50,3 +51,4 @@ public class MailSenderController : Controller
 
     }
 }
+
